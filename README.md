@@ -3,6 +3,10 @@ MCRotatingCarousel
 
 A view which can be used to create the rotating carousel as used in the ModCloth iPad app.
 
+Installation
+============
+Add `pod 'MCRotatingCarousel'` to your Podfile.
+
 Usage
 =====
 * create an instance of MCRotatingCarousel and add it to your view hierarchy
