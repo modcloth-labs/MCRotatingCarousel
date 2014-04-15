@@ -42,6 +42,11 @@
  */
 -(void)rotatingCarousel:(MCRotatingCarousel *)carousel didSelectView:(UIView*)view atIndex:(NSUInteger)index;
 
+/**
+ Called when the view moves into front position
+ */
+-(void)rotatingCarousel:(MCRotatingCarousel *)carousel viewMovedToFront:(UIView *)view atIndex:(NSUInteger)index;
+
 @end
 
 #pragma mark -

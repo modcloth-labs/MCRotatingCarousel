@@ -131,6 +131,13 @@
     *targetContentOffset = CGPointMake(xOffset, targetContentOffset->y);
 }
 
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    if ([self.delegate respondsToSelector:@selector(rotatingCarousel:viewMovedToFront:atIndex:)]) {
+        [self.delegate rotatingCarousel:self viewMovedToFront:self.cells[self.pageControl.currentPage] atIndex:self.pageControl.currentPage];
+    }
+}
+
 #pragma mark - Manage Image Views
 
 -(NSArray*)createCellArray

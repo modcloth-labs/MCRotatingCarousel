@@ -72,8 +72,14 @@
 #pragma mark - MCRotatingCarouselDelegate
 -(void)rotatingCarousel:(MCRotatingCarousel *)carousel didSelectView:(UIView *)view atIndex:(NSUInteger)index
 {
-    NSLog(@"did select item at index: %i",index);
+    NSLog(@"did select item at index: %lu",(unsigned long)index);
 }
+
+- (void)rotatingCarousel:(MCRotatingCarousel *)carousel viewMovedToFront:(UIView *)view atIndex:(NSUInteger)index
+{
+    NSLog(@"did move to front at index: %lu",index);
+}
+
 
 #pragma mark - private
  
