@@ -18,10 +18,6 @@
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
 
-    int someInt = 0;
-    someInt = 5;
-
-
     return YES;
 }
 
