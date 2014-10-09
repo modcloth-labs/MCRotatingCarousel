@@ -17,6 +17,7 @@
     UIViewController *vc = [[MCExampleViewController alloc]init];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
+
     return YES;
 }
 
