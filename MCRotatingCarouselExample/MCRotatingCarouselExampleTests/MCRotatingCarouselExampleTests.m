@@ -28,7 +28,8 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    // This is an example of a functional test case.
+    XCTAssert(true, "Pass")
 }
 
 @end
