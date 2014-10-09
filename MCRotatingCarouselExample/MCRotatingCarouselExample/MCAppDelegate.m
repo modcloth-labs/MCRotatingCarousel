@@ -16,6 +16,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     UIViewController *vc = [[MCExampleViewController alloc]init];
     self.window.rootViewController = vc;
+#warning example warning
     [self.window makeKeyAndVisible];
     return YES;
 }
